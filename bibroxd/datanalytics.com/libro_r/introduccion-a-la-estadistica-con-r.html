@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html >
+
+
+<!-- Mirrored from datanalytics.com/libro_r/introduccion-a-la-estadistica-con-r.html by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 07 Feb 2018 15:03:51 GMT -->
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>R para profesionales de los datos: una introducción</title>
+  <meta name="description" content="Una introducción a R para profesionales de los datos">
+  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+
+  <meta property="og:title" content="R para profesionales de los datos: una introducción" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Una introducción a R para profesionales de los datos" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="R para profesionales de los datos: una introducción" />
+  
+  <meta name="twitter:description" content="Una introducción a R para profesionales de los datos" />
+  
+
+<meta name="author" content="Carlos J. Gil Bellosta">
+
+
+<meta name="date" content="2017-07-02">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="ejercicios-adicionales-1.html">
+<link rel="next" href="el-test-de-student.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a><ul>
+<li class="chapter" data-level="1.1" data-path="contenido-y-plan-del-libro.html"><a href="contenido-y-plan-del-libro.html"><i class="fa fa-check"></i><b>1.1</b> Contenido y plan del libro</a></li>
+<li class="chapter" data-level="1.2" data-path="rstudio-y-la-instalacion-del-entorno.html"><a href="rstudio-y-la-instalacion-del-entorno.html"><i class="fa fa-check"></i><b>1.2</b> RStudio y la instalación del entorno</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="rstudio-y-la-instalacion-del-entorno.html"><a href="rstudio-y-la-instalacion-del-entorno.html#instalacion-de-r-y-rstudio"><i class="fa fa-check"></i><b>1.2.1</b> Instalación de R y RStudio</a></li>
+<li class="chapter" data-level="1.2.2" data-path="rstudio-y-la-instalacion-del-entorno.html"><a href="rstudio-y-la-instalacion-del-entorno.html#brevisima-introduccion-a-rstudio"><i class="fa fa-check"></i><b>1.2.2</b> Brevísima introducción a RStudio</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tablas-dataframes.html"><a href="tablas-dataframes.html"><i class="fa fa-check"></i><b>2</b> Tablas (dataframes)</a><ul>
+<li class="chapter" data-level="2.1" data-path="inspeccion-de-una-tabla.html"><a href="inspeccion-de-una-tabla.html"><i class="fa fa-check"></i><b>2.1</b> Inspección de una tabla</a></li>
+<li class="chapter" data-level="2.2" data-path="seleccion-de-filas-y-columnas.html"><a href="seleccion-de-filas-y-columnas.html"><i class="fa fa-check"></i><b>2.2</b> Selección de filas y columnas</a></li>
+<li class="chapter" data-level="2.3" data-path="creacion-y-eliminacion-de-tablas-y-columnas.html"><a href="creacion-y-eliminacion-de-tablas-y-columnas.html"><i class="fa fa-check"></i><b>2.3</b> Creación y eliminación de tablas y columnas</a></li>
+<li class="chapter" data-level="2.4" data-path="ordenacion.html"><a href="ordenacion.html"><i class="fa fa-check"></i><b>2.4</b> Ordenación</a></li>
+<li class="chapter" data-level="2.5" data-path="lectura-de-datos-externos.html"><a href="lectura-de-datos-externos.html"><i class="fa fa-check"></i><b>2.5</b> Lectura de datos externos</a></li>
+<li class="chapter" data-level="2.6" data-path="graficos-basicos.html"><a href="graficos-basicos.html"><i class="fa fa-check"></i><b>2.6</b> Gráficos básicos</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="graficos-basicos.html"><a href="graficos-basicos.html#graficos-de-dispersion"><i class="fa fa-check"></i><b>2.6.1</b> Gráficos de dispersión</a></li>
+<li class="chapter" data-level="2.6.2" data-path="graficos-basicos.html"><a href="graficos-basicos.html#graficos-de-barras"><i class="fa fa-check"></i><b>2.6.2</b> Gráficos de barras</a></li>
+<li class="chapter" data-level="2.6.3" data-path="graficos-basicos.html"><a href="graficos-basicos.html#histogramas"><i class="fa fa-check"></i><b>2.6.3</b> Histogramas</a></li>
+<li class="chapter" data-level="2.6.4" data-path="graficos-basicos.html"><a href="graficos-basicos.html#diagramas-de-caja-boxplots"><i class="fa fa-check"></i><b>2.6.4</b> Diagramas de caja (boxplots)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="resumen-y-referencias.html"><a href="resumen-y-referencias.html"><i class="fa fa-check"></i><b>2.7</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="2.8" data-path="ejercicios-adicionales.html"><a href="ejercicios-adicionales.html"><i class="fa fa-check"></i><b>2.8</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="vectores.html"><a href="vectores.html"><i class="fa fa-check"></i><b>3</b> Vectores</a><ul>
+<li class="chapter" data-level="3.1" data-path="creacion-de-vectores.html"><a href="creacion-de-vectores.html"><i class="fa fa-check"></i><b>3.1</b> Creación de vectores</a></li>
+<li class="chapter" data-level="3.2" data-path="inspeccion-de-vectores.html"><a href="inspeccion-de-vectores.html"><i class="fa fa-check"></i><b>3.2</b> Inspección de vectores</a></li>
+<li class="chapter" data-level="3.3" data-path="selecciones.html"><a href="selecciones.html"><i class="fa fa-check"></i><b>3.3</b> Selecciones</a></li>
+<li class="chapter" data-level="3.4" data-path="distribuciones-de-probabilidad.html"><a href="distribuciones-de-probabilidad.html"><i class="fa fa-check"></i><b>3.4</b> Distribuciones de probabilidad</a></li>
+<li class="chapter" data-level="3.5" data-path="ordenacion-1.html"><a href="ordenacion-1.html"><i class="fa fa-check"></i><b>3.5</b> Ordenación</a></li>
+<li class="chapter" data-level="3.6" data-path="operaciones-matematicas-y-vectorizacion.html"><a href="operaciones-matematicas-y-vectorizacion.html"><i class="fa fa-check"></i><b>3.6</b> Operaciones matemáticas y vectorización</a></li>
+<li class="chapter" data-level="3.7" data-path="digresion-una-calculadora-de-hipotecas-con-r.html"><a href="digresion-una-calculadora-de-hipotecas-con-r.html"><i class="fa fa-check"></i><b>3.7</b> Digresión: una calculadora de hipotecas con R</a></li>
+<li class="chapter" data-level="3.8" data-path="digresion-creacion-de-funciones.html"><a href="digresion-creacion-de-funciones.html"><i class="fa fa-check"></i><b>3.8</b> Digresión: creación de funciones</a></li>
+<li class="chapter" data-level="3.9" data-path="la-funcion-tapply.html"><a href="la-funcion-tapply.html"><i class="fa fa-check"></i><b>3.9</b> La función tapply</a></li>
+<li class="chapter" data-level="3.10" data-path="resumen-y-referencias-1.html"><a href="resumen-y-referencias-1.html"><i class="fa fa-check"></i><b>3.10</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="3.11" data-path="ejercicios-adicionales-1.html"><a href="ejercicios-adicionales-1.html"><i class="fa fa-check"></i><b>3.11</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="introduccion-a-la-estadistica-con-r.html"><a href="introduccion-a-la-estadistica-con-r.html"><i class="fa fa-check"></i><b>4</b> Introducción a la estadística con R</a><ul>
+<li class="chapter" data-level="4.1" data-path="el-test-de-student.html"><a href="el-test-de-student.html"><i class="fa fa-check"></i><b>4.1</b> El test de Student</a></li>
+<li class="chapter" data-level="4.2" data-path="regresion-lineal.html"><a href="regresion-lineal.html"><i class="fa fa-check"></i><b>4.2</b> Regresión lineal</a></li>
+<li class="chapter" data-level="4.3" data-path="regresion-logistica.html"><a href="regresion-logistica.html"><i class="fa fa-check"></i><b>4.3</b> Regresión logística</a></li>
+<li class="chapter" data-level="4.4" data-path="resumen-y-referencias-2.html"><a href="resumen-y-referencias-2.html"><i class="fa fa-check"></i><b>4.4</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="4.5" data-path="ejercicios-adicionales-2.html"><a href="ejercicios-adicionales-2.html"><i class="fa fa-check"></i><b>4.5</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="listas.html"><a href="listas.html"><i class="fa fa-check"></i><b>5</b> Listas</a><ul>
+<li class="chapter" data-level="5.1" data-path="algunos-usos-de-las-listas.html"><a href="algunos-usos-de-las-listas.html"><i class="fa fa-check"></i><b>5.1</b> Algunos usos de las listas</a></li>
+<li class="chapter" data-level="5.2" data-path="exploracion-y-manipulacion-de-listas.html"><a href="exploracion-y-manipulacion-de-listas.html"><i class="fa fa-check"></i><b>5.2</b> Exploración y manipulación de listas</a></li>
+<li class="chapter" data-level="5.3" data-path="las-funciones-lapply-sapply-y-split.html"><a href="las-funciones-lapply-sapply-y-split.html"><i class="fa fa-check"></i><b>5.3</b> Las funciones lapply, sapply y split</a></li>
+<li class="chapter" data-level="5.4" data-path="resumen-y-referencias-3.html"><a href="resumen-y-referencias-3.html"><i class="fa fa-check"></i><b>5.4</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="5.5" data-path="ejercicios-adicionales-3.html"><a href="ejercicios-adicionales-3.html"><i class="fa fa-check"></i><b>5.5</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="paquetes-rmarkdown-y-shiny.html"><a href="paquetes-rmarkdown-y-shiny.html"><i class="fa fa-check"></i><b>6</b> Paquetes, rmarkdown y shiny</a><ul>
+<li class="chapter" data-level="6.1" data-path="paquetes.html"><a href="paquetes.html"><i class="fa fa-check"></i><b>6.1</b> Paquetes</a></li>
+<li class="chapter" data-level="6.2" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>6.2</b> Rmarkdown</a></li>
+<li class="chapter" data-level="6.3" data-path="shiny.html"><a href="shiny.html"><i class="fa fa-check"></i><b>6.3</b> Shiny</a></li>
+<li class="chapter" data-level="6.4" data-path="resumen-y-referencias-4.html"><a href="resumen-y-referencias-4.html"><i class="fa fa-check"></i><b>6.4</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="6.5" data-path="ejercicios-adicionales-4.html"><a href="ejercicios-adicionales-4.html"><i class="fa fa-check"></i><b>6.5</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="web-scraping-y-manipulacion-basica-de-texto.html"><a href="web-scraping-y-manipulacion-basica-de-texto.html"><i class="fa fa-check"></i><b>7</b> Web scraping y manipulación básica de texto</a><ul>
+<li class="chapter" data-level="7.1" data-path="web-scraping.html"><a href="web-scraping.html"><i class="fa fa-check"></i><b>7.1</b> Web scraping</a></li>
+<li class="chapter" data-level="7.2" data-path="manipulacion-basica-de-texto.html"><a href="manipulacion-basica-de-texto.html"><i class="fa fa-check"></i><b>7.2</b> Manipulación básica de texto</a></li>
+<li class="chapter" data-level="7.3" data-path="json-y-xml.html"><a href="json-y-xml.html"><i class="fa fa-check"></i><b>7.3</b> JSON y XML</a></li>
+<li class="chapter" data-level="7.4" data-path="resumen-y-referencias-5.html"><a href="resumen-y-referencias-5.html"><i class="fa fa-check"></i><b>7.4</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="7.5" data-path="ejercicios-adicionales-5.html"><a href="ejercicios-adicionales-5.html"><i class="fa fa-check"></i><b>7.5</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="pivotacion-de-tablas-con-reshape2.html"><a href="pivotacion-de-tablas-con-reshape2.html"><i class="fa fa-check"></i><b>8</b> Pivotación de tablas con reshape2</a><ul>
+<li class="chapter" data-level="8.1" data-path="la-funcion-melt-y-datos-en-formato-largo.html"><a href="la-funcion-melt-y-datos-en-formato-largo.html"><i class="fa fa-check"></i><b>8.1</b> La función melt y datos en formato largo</a></li>
+<li class="chapter" data-level="8.2" data-path="la-funcion-dcast-y-datos-en-formato-ancho.html"><a href="la-funcion-dcast-y-datos-en-formato-ancho.html"><i class="fa fa-check"></i><b>8.2</b> La función dcast y datos en formato ancho</a></li>
+<li class="chapter" data-level="8.3" data-path="resumen-y-referencias-6.html"><a href="resumen-y-referencias-6.html"><i class="fa fa-check"></i><b>8.3</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="8.4" data-path="ejercicios-adicionales-6.html"><a href="ejercicios-adicionales-6.html"><i class="fa fa-check"></i><b>8.4</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="introduccion-a-ggplot2.html"><a href="introduccion-a-ggplot2.html"><i class="fa fa-check"></i><b>9</b> Introducción a ggplot2</a><ul>
+<li class="chapter" data-level="9.1" data-path="una-primera-toma-de-contacto.html"><a href="una-primera-toma-de-contacto.html"><i class="fa fa-check"></i><b>9.1</b> Una primera toma de contacto</a></li>
+<li class="chapter" data-level="9.2" data-path="elementos-de-un-grafico-en-ggplot2.html"><a href="elementos-de-un-grafico-en-ggplot2.html"><i class="fa fa-check"></i><b>9.2</b> Elementos de un gráfico en <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="9.2.1" data-path="elementos-de-un-grafico-en-ggplot2.html"><a href="elementos-de-un-grafico-en-ggplot2.html#datos"><i class="fa fa-check"></i><b>9.2.1</b> Datos</a></li>
+<li class="chapter" data-level="9.2.2" data-path="elementos-de-un-grafico-en-ggplot2.html"><a href="elementos-de-un-grafico-en-ggplot2.html#esteticas"><i class="fa fa-check"></i><b>9.2.2</b> Estéticas</a></li>
+<li class="chapter" data-level="9.2.3" data-path="elementos-de-un-grafico-en-ggplot2.html"><a href="elementos-de-un-grafico-en-ggplot2.html#capas"><i class="fa fa-check"></i><b>9.2.3</b> Capas</a></li>
+<li class="chapter" data-level="9.2.4" data-path="elementos-de-un-grafico-en-ggplot2.html"><a href="elementos-de-un-grafico-en-ggplot2.html#facetas"><i class="fa fa-check"></i><b>9.2.4</b> Facetas</a></li>
+<li class="chapter" data-level="9.2.5" data-path="elementos-de-un-grafico-en-ggplot2.html"><a href="elementos-de-un-grafico-en-ggplot2.html#mas-sobre-esteticas"><i class="fa fa-check"></i><b>9.2.5</b> Más sobre estéticas</a></li>
+<li class="chapter" data-level="9.2.6" data-path="elementos-de-un-grafico-en-ggplot2.html"><a href="elementos-de-un-grafico-en-ggplot2.html#temas"><i class="fa fa-check"></i><b>9.2.6</b> Temas</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="ejemplos.html"><a href="ejemplos.html"><i class="fa fa-check"></i><b>9.3</b> Ejemplos</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="ejemplos.html"><a href="ejemplos.html#diagramas-de-cajas-y-de-violin"><i class="fa fa-check"></i><b>9.3.1</b> Diagramas de cajas (y de violín)</a></li>
+<li class="chapter" data-level="9.3.2" data-path="ejemplos.html"><a href="ejemplos.html#comparacion-de-dos-densidades"><i class="fa fa-check"></i><b>9.3.2</b> Comparación de dos densidades</a></li>
+<li class="chapter" data-level="9.3.3" data-path="ejemplos.html"><a href="ejemplos.html#series-temporales"><i class="fa fa-check"></i><b>9.3.3</b> Series temporales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="resumen-y-referencias-7.html"><a href="resumen-y-referencias-7.html"><i class="fa fa-check"></i><b>9.4</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="9.5" data-path="ejercicios-adicionales-7.html"><a href="ejercicios-adicionales-7.html"><i class="fa fa-check"></i><b>9.5</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="introduccion-a-ggmap.html"><a href="introduccion-a-ggmap.html"><i class="fa fa-check"></i><b>10</b> Introducción a ggmap</a><ul>
+<li class="chapter" data-level="10.1" data-path="funciones-de-ggmap.html"><a href="funciones-de-ggmap.html"><i class="fa fa-check"></i><b>10.1</b> Funciones de <code>ggmap</code></a><ul>
+<li class="chapter" data-level="10.1.1" data-path="funciones-de-ggmap.html"><a href="funciones-de-ggmap.html#funciones-para-obtener-mapas"><i class="fa fa-check"></i><b>10.1.1</b> Funciones para obtener mapas</a></li>
+<li class="chapter" data-level="10.1.2" data-path="funciones-de-ggmap.html"><a href="funciones-de-ggmap.html#funciones-para-consultar-apis-cartograficas"><i class="fa fa-check"></i><b>10.1.2</b> Funciones para consultar APIs cartográficas</a></li>
+<li class="chapter" data-level="10.1.3" data-path="funciones-de-ggmap.html"><a href="funciones-de-ggmap.html#funciones-para-representar-elementos-sobre-mapas"><i class="fa fa-check"></i><b>10.1.3</b> Funciones para representar elementos sobre mapas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="ejemplos-1.html"><a href="ejemplos-1.html"><i class="fa fa-check"></i><b>10.2</b> Ejemplos</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="ejemplos-1.html"><a href="ejemplos-1.html#puntos-sobre-mapas"><i class="fa fa-check"></i><b>10.2.1</b> Puntos sobre mapas</a></li>
+<li class="chapter" data-level="10.2.2" data-path="ejemplos-1.html"><a href="ejemplos-1.html#rutas-sobre-mapas"><i class="fa fa-check"></i><b>10.2.2</b> Rutas sobre mapas</a></li>
+<li class="chapter" data-level="10.2.3" data-path="ejemplos-1.html"><a href="ejemplos-1.html#mas-alla-de-los-puntos-densidades-y-reticulas"><i class="fa fa-check"></i><b>10.2.3</b> Más allá de los puntos: densidades y retículas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="resumen-y-referencias-8.html"><a href="resumen-y-referencias-8.html"><i class="fa fa-check"></i><b>10.3</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="10.4" data-path="ejercicios-adicionales-8.html"><a href="ejercicios-adicionales-8.html"><i class="fa fa-check"></i><b>10.4</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="procesamiento-de-tablas-por-trozos-con-plyr.html"><a href="procesamiento-de-tablas-por-trozos-con-plyr.html"><i class="fa fa-check"></i><b>11</b> Procesamiento de tablas por trozos con plyr</a><ul>
+<li class="chapter" data-level="11.1" data-path="resumenes-de-datos-por-bloques.html"><a href="resumenes-de-datos-por-bloques.html"><i class="fa fa-check"></i><b>11.1</b> Resúmenes de datos por bloques</a></li>
+<li class="chapter" data-level="11.2" data-path="otras-funciones-similares-a-ddply-de-plyr.html"><a href="otras-funciones-similares-a-ddply-de-plyr.html"><i class="fa fa-check"></i><b>11.2</b> Otras funciones similares a ddply de plyr</a></li>
+<li class="chapter" data-level="11.3" data-path="transformaciones-de-datos-por-bloques.html"><a href="transformaciones-de-datos-por-bloques.html"><i class="fa fa-check"></i><b>11.3</b> Transformaciones de datos por bloques</a></li>
+<li class="chapter" data-level="11.4" data-path="mas-alla-de-summarize-y-transform.html"><a href="mas-alla-de-summarize-y-transform.html"><i class="fa fa-check"></i><b>11.4</b> Más allá de summarize y transform</a></li>
+<li class="chapter" data-level="11.5" data-path="cruces-de-tablas.html"><a href="cruces-de-tablas.html"><i class="fa fa-check"></i><b>11.5</b> Cruces de tablas</a></li>
+<li class="chapter" data-level="11.6" data-path="resumen-y-referencias-9.html"><a href="resumen-y-referencias-9.html"><i class="fa fa-check"></i><b>11.6</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="11.7" data-path="ejercicios-adicionales-9.html"><a href="ejercicios-adicionales-9.html"><i class="fa fa-check"></i><b>11.7</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="programacion-en-r.html"><a href="programacion-en-r.html"><i class="fa fa-check"></i><b>12</b> Programación en R</a><ul>
+<li class="chapter" data-level="12.1" data-path="programacion-imperativa-en-r.html"><a href="programacion-imperativa-en-r.html"><i class="fa fa-check"></i><b>12.1</b> Programación imperativa en R</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="programacion-imperativa-en-r.html"><a href="programacion-imperativa-en-r.html#variables"><i class="fa fa-check"></i><b>12.1.1</b> Variables</a></li>
+<li class="chapter" data-level="12.1.2" data-path="programacion-imperativa-en-r.html"><a href="programacion-imperativa-en-r.html#funciones"><i class="fa fa-check"></i><b>12.1.2</b> Funciones</a></li>
+<li class="chapter" data-level="12.1.3" data-path="programacion-imperativa-en-r.html"><a href="programacion-imperativa-en-r.html#expresiones-condicionales"><i class="fa fa-check"></i><b>12.1.3</b> Expresiones condicionales</a></li>
+<li class="chapter" data-level="12.1.4" data-path="programacion-imperativa-en-r.html"><a href="programacion-imperativa-en-r.html#bucles"><i class="fa fa-check"></i><b>12.1.4</b> Bucles</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="programacion-funcional-en-r.html"><a href="programacion-funcional-en-r.html"><i class="fa fa-check"></i><b>12.2</b> Programación funcional en R</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="programacion-funcional-en-r.html"><a href="programacion-funcional-en-r.html#funciones-anonimas"><i class="fa fa-check"></i><b>12.2.1</b> Funciones anónimas</a></li>
+<li class="chapter" data-level="12.2.2" data-path="programacion-funcional-en-r.html"><a href="programacion-funcional-en-r.html#map-reduce-y-mas"><i class="fa fa-check"></i><b>12.2.2</b> Map, reduce y más</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="orientacion-a-objetos.html"><a href="orientacion-a-objetos.html"><i class="fa fa-check"></i><b>12.3</b> Orientación a objetos</a><ul>
+<li class="chapter" data-level="12.3.1" data-path="orientacion-a-objetos.html"><a href="orientacion-a-objetos.html#polimorfismo"><i class="fa fa-check"></i><b>12.3.1</b> Polimorfismo</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="resumen-y-referencias-10.html"><a href="resumen-y-referencias-10.html"><i class="fa fa-check"></i><b>12.4</b> Resumen y referencias</a></li>
+<li class="chapter" data-level="12.5" data-path="ejercicios-adicionales-10.html"><a href="ejercicios-adicionales-10.html"><i class="fa fa-check"></i><b>12.5</b> Ejercicios adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="estadistica-y-ciencia-de-datos-con-r.html"><a href="estadistica-y-ciencia-de-datos-con-r.html"><i class="fa fa-check"></i><b>13</b> Estadística y ciencia de datos con R</a><ul>
+<li class="chapter" data-level="13.1" data-path="arboles-de-decision.html"><a href="arboles-de-decision.html"><i class="fa fa-check"></i><b>13.1</b> Árboles de decisión</a></li>
+<li class="chapter" data-level="13.2" data-path="igualdad-de-medias-y-t-test.html"><a href="igualdad-de-medias-y-t-test.html"><i class="fa fa-check"></i><b>13.2</b> Igualdad de medias y t-test</a></li>
+<li class="chapter" data-level="13.3" data-path="igualdad-de-medias-mediante-remuestreos.html"><a href="igualdad-de-medias-mediante-remuestreos.html"><i class="fa fa-check"></i><b>13.3</b> Igualdad de medias mediante remuestreos</a></li>
+<li class="chapter" data-level="13.4" data-path="regresion-lineal-1.html"><a href="regresion-lineal-1.html"><i class="fa fa-check"></i><b>13.4</b> Regresión lineal</a></li>
+<li class="chapter" data-level="13.5" data-path="regresion-logistica-1.html"><a href="regresion-logistica-1.html"><i class="fa fa-check"></i><b>13.5</b> Regresión logística</a></li>
+<li class="chapter" data-level="13.6" data-path="modelos-no-lineales.html"><a href="modelos-no-lineales.html"><i class="fa fa-check"></i><b>13.6</b> Modelos no lineales</a></li>
+<li class="chapter" data-level="13.7" data-path="clustering-con-k-medias.html"><a href="clustering-con-k-medias.html"><i class="fa fa-check"></i><b>13.7</b> Clústering con k-medias</a></li>
+<li class="chapter" data-level="13.8" data-path="resumen-y-referencias-11.html"><a href="resumen-y-referencias-11.html"><i class="fa fa-check"></i><b>13.8</b> Resumen y referencias</a><ul>
+<li class="chapter" data-level="13.8.1" data-path="resumen-y-referencias-11.html"><a href="resumen-y-referencias-11.html#arboles"><i class="fa fa-check"></i><b>13.8.1</b> Árboles</a></li>
+<li class="chapter" data-level="13.8.2" data-path="resumen-y-referencias-11.html"><a href="resumen-y-referencias-11.html#pruebas-de-hipotesis"><i class="fa fa-check"></i><b>13.8.2</b> Pruebas de hipótesis</a></li>
+<li class="chapter" data-level="13.8.3" data-path="resumen-y-referencias-11.html"><a href="resumen-y-referencias-11.html#modelos-lineales-y-sus-extensiones"><i class="fa fa-check"></i><b>13.8.3</b> Modelos lineales y sus extensiones</a></li>
+<li class="chapter" data-level="13.8.4" data-path="resumen-y-referencias-11.html"><a href="resumen-y-referencias-11.html#clustering"><i class="fa fa-check"></i><b>13.8.4</b> Clústering</a></li>
+</ul></li>
+<li class="chapter" data-level="13.9" data-path="ejercicios-adicionales-11.html"><a href="ejercicios-adicionales-11.html"><i class="fa fa-check"></i><b>13.9</b> Ejercicios adicionales</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="index-2.html">R para profesionales de los datos: una introducción</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduccion-a-la-estadistica-con-r" class="section level1">
+<h1><span class="header-section-number">4</span> Introducción a la estadística con R</h1>
+<p>Esta sección muestra cómo aplicar una serie de técnicas estadísticas habituales con R como aplicación de lo aprendido hasta la fecha y como motivación para introducir otros conceptos más adelante. Probablemente, ayudará a satisfacer la curiosidad de quienes ya las conozcan y quieran ver cómo utilizarlas en R. Pero no tiene como objetivo en absoluto profundizar en sus aspectos matemáticos.</p> 
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ejercicios-adicionales-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="el-test-de-student.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "../../cdn.bootcss.com/mathjax/2.7.1/MathJaxb198.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+
+<!-- Mirrored from datanalytics.com/libro_r/introduccion-a-la-estadistica-con-r.html by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 07 Feb 2018 15:03:51 GMT -->
+</html>
