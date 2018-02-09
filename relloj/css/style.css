@@ -14,15 +14,12 @@ body {
 }
 
 .wrap {
-	width: 90%;
-	max-width: 1000px;
-	/*margin:auto;*/
+		margin:auto;
 }
 
 .widget {
-	width: 40%;
+	width: auto;
 	margin: 2em;
-	/*margin:32px; */
 }
 
 .widget p {
