@@ -267,7 +267,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>La regresión lineal expresa la relación entre una variable numérica con otras variables predictoras. En el caso más simple, el que vamos a explorar a continuación, se considera una única variable predictora.</p>
 <p>Existe una relación creciente entre las variables velocidad y distancia en el conjunto de datos <code>speed</code>. En efecto, a mayor velocidad, mayor es la distancia de frenado de los vehículos que recoge el conjunto de datos:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cars$speed, cars$dist)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-134-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-134-1.png" width="672" /></p>
 <p>El gráfico anterior muestra una nube de puntos. La regresión lineal construye la recta que, en cierto modo, mejor aproxima esa nube.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lm.dist.speed &lt;-<span class="st"> </span><span class="kw">lm</span>(cars$dist ~<span class="st"> </span>cars$speed)
 lm.dist.speed</code></pre></div>
@@ -280,7 +280,7 @@ lm.dist.speed</code></pre></div>
 ##     -17.579        3.932</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cars$speed, cars$dist)
 <span class="kw">abline</span>(lm.dist.speed, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-135-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-135-1.png" width="672" /></p>
 <p>El código anterior usa la función <code>lm</code> para ajustar el modelo de regresión lineal (<em>linear model</em>), muestra un pequeño resumen del modelo en pantalla y finalmente añade la recta de regresión, en rojo, al gráfico anterior.</p>
 <p>La función <code>summary</code>, aplicada en este caso no a un vector o a una tabla sino al objeto resultante de la regresión lineal, muestra un resumen del modelo similar al que aparece en las publicaciones científicas:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(lm.dist.speed)</code></pre></div>
@@ -304,7 +304,7 @@ lm.dist.speed</code></pre></div>
 ## F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <p><code>summary</code> no es la única función que admite el modelo creado: <code>plot</code> crea una representación gráfica (de hecho, produce varias gráficas distintas de las que en el código que aparece a continuación representaremos solo la primera; para ver las restantes, cambia el índice 1 por otros valores entre 2 y 6) que ilustra algunos aspectos del modelo que los implementadores de la función <code>lm</code> encontraron útiles:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(lm.dist.speed, <span class="dv">1</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-137-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-137-1.png" width="672" /></p>
 <p>En general, muchos modelos creados en R admiten llamadas de las funciones <code>summary</code> y <code>plot</code>, que producen los resultados esperados.</p>
 <div class="ej">
 <p>
@@ -341,7 +341,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

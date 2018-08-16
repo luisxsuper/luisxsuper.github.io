@@ -330,13 +330,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Las capas (o <code>geoms</code> para <code>ggplot2</code>) son los verbos del lenguaje de los gráficos. Indican qué hacer con los datos y las estéticas elegidas, cómo representarlos en un lienzo. Y, en efecto, el siguiente código crea el correspondiente gráfico.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p &lt;-<span class="st"> </span>p +<span class="st"> </span><span class="kw">geom_point</span>()
 p</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-254-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-254-1.png" width="672" /></p>
 <p>Una vez añadida una capa al gráfico, este puede pintarse (que es lo que ocurre al llamar a <code>p</code>). Se obtiene el mismo resultado haciendo, en una única línea,</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(iris, <span class="kw">aes</span>(<span class="dt">x =</span> Petal.Length, <span class="dt">y =</span> Petal.Width, <span class="dt">colour =</span> Species)) +<span class="st"> </span><span class="kw">geom_point</span>()</code></pre></div>
 <p>Una característica de las capas, y de ahí su nombre, es que pueden superponerse. Por ejemplo,</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(iris, <span class="kw">aes</span>(<span class="dt">x =</span> Petal.Length, <span class="dt">y =</span> Petal.Width, <span class="dt">colour =</span> Species)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_point</span>() +<span class="st"> </span><span class="kw">geom_smooth</span>()</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-256-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-256-1.png" width="672" /></p>
 <p>añade al gráfico una curva suavizada (con sus intervalos de confianza en gris).</p>
 <p>Existen muchos tipos de capas. Los más usuales son <code>geom_point</code>, <code>geom_line</code>, <code>geom_histogram</code>, <code>geom_bar</code> y <code>geom_boxplot</code>. Pero hay más. En la página <code>http://docs.ggplot2.org/current/</code> se muestra una lista de los disponibles (en la versión más actualizada de <code>ggplot2</code>). En esa página se indica qué <em>geom</em> hay que utilizar en función de una representación esquemática del tipo de gráfico que se quiere construir. Además, hay capas específicas que exigen estéticas especiales. Para algunas tiene sentido, p.e., <code>shape</code>. Para otras no. Esas especificidades están indicadas en dicha página, que es más útil que la ayuda general de R.</p>
 <p>Una vez creado un gráfico, es posible exportarlo a png, jpg, etc. La función <code>ggsave</code> guarda en un fichero el último gráfico generado con <code>ggplot2</code>. Lo hace, además, en el formato indicado en el nombre del fichero que se quiere generar. Así,</p>
@@ -351,7 +351,7 @@ p</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(iris, <span class="kw">aes</span>(<span class="dt">x =</span> Petal.Length, <span class="dt">y =</span> Petal.Width)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_point</span>() +<span class="st"> </span><span class="kw">geom_smooth</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">facet_grid</span>(~<span class="st"> </span>Species)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-258-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-258-1.png" width="672" /></p>
 <p>crea tres gráficos dispuestos horizontalmente que comparan la relación entre la anchura y la longitud del pétalo de las tres especies de iris. Una característica de estos gráficos, que es crítica para poder hacer comparaciones adecuadas, es que comparten ejes.</p>
 <p>Los gráficos podrían disponerse verticalmente reemplazando <code>facet_grid(~ Species)</code> por <code>facet_grid(Species ~ .)</code> en el código anterior. Además, se puede subdividir el lienzo por dos (¡o más!) variables así:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">tmp &lt;-<span class="st"> </span>paro[paro$Provinces %in%<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;50 Zaragoza&quot;</span>, <span class="st">&quot;22 Huesca&quot;</span>, <span class="st">&quot;44 Teruel&quot;</span>),]
@@ -359,7 +359,7 @@ p</code></pre></div>
 <span class="st">  </span><span class="kw">geom_point</span>() +<span class="st"> </span><span class="kw">geom_smooth</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">facet_grid</span>(Provinces~Gender)</code></pre></div>
 <pre><code>## `geom_smooth()` using method = &#39;loess&#39;</code></pre>
-<p><img src="_main_files/figure-html/unnamed-chunk-259-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-259-1.png" width="672" /></p>
 <p>En caso de haber muchas categorías (p.e., provincia), puede usarse la función <code>facet_wrap</code> para distribuir las subgráficas en una cuadrícula.</p>
 </div>
 <div id="mas-sobre-esteticas" class="section level3">
@@ -417,7 +417,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

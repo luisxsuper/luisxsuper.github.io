@@ -287,7 +287,7 @@ diferencia.original &lt;-<span class="st"> </span>medias.sexo[<span class="st">&
 <p>En este momento disponemos de una muestra de 10000 diferencias entre grupos <em>sin señal</em>. De otra manera, hemos identificado el nivel de <em>ruido</em> del conjunto de datos, que podemos representar con un histograma. Sobre él podemos representar la diferencia real (con una línea vertical roja):</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(diferencias.simuladas)
 <span class="kw">abline</span>(<span class="dt">v =</span> diferencia.original, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-412-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-412-1.png" width="672" /></p>
 <p>La gráfica obtenida representa la diferencia original (por sexos) dentro del universo de diferencias sin señal creadas mediante remuestreos. El p-valor (que hemos obtenido antes mediante una prueba estadística clásica) no es otra cosa que la proporción de observaciones que caen a la derecha de la línea roja. Lo podemos calcular explícitamente así:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(diferencias.simuladas &gt;<span class="st"> </span>diferencia.original)</code></pre></div>
 <pre><code>## [1] 0.021</code></pre>
@@ -327,7 +327,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

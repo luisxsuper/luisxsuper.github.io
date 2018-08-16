@@ -268,7 +268,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mat.por &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;data/student-mat.csv&quot;</span>, <span class="dt">header =</span> T, <span class="dt">sep =</span> <span class="st">&quot;;&quot;</span>)</code></pre></div>
 <p>Las variables <code>G1</code>, <code>G2</code> y <code>G3</code> se refieren a las notas obtenidas en tres exámenes distintos y nuestro objetivo será analizar las diferencias por sexos en el último examen, <code>G3</code>. Primero, gráficamente, con un diagrama de cajas:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(mat.por$G3 ~<span class="st"> </span>mat.por$sex, <span class="dt">col =</span> <span class="st">&quot;gray&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;sexo&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;nota final&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-404-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-404-1.png" width="672" /></p>
 <p>Se aprecia una pequeña diferencia en favor de los chicos. Es la diferencia observada, que puede deberse al azar. Por eso se puede aplicar una prueba estadística (en este caso, el llamado test de Student o t-test) para determinar si esa diferencia observada es o no <em>significativa</em>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">res &lt;-<span class="st"> </span><span class="kw">t.test</span>(mat.por$G3 ~<span class="st"> </span>mat.por$sex)
 res</code></pre></div>
@@ -328,7 +328,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

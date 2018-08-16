@@ -272,18 +272,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">HoustonMap &lt;-<span class="st"> </span><span class="kw">qmap</span>(<span class="st">&quot;houston&quot;</span>, <span class="dt">zoom =</span> <span class="dv">14</span>, <span class="dt">color =</span> <span class="st">&quot;bw&quot;</span>)
 HoustonMap +
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">x =</span> lon, <span class="dt">y =</span> lat, <span class="dt">colour =</span> offense), <span class="dt">data =</span> crimes.houston, <span class="dt">size =</span> <span class="dv">1</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-283-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-283-1.png" width="672" /></p>
 <p>En el código anterior hemos usado la función <code>qmap</code>, una función auxiliar que internamente llama primero <code>get_map</code> y luego a <code>ggmap</code>.</p>
 <p>Los mecanismos conocidos de <code>ggplot2</code>, como las facetas, están disponibles en <code>ggmap</code>: es posible crear una retícula de mapas usando <code>facet_wrap</code>. En este primer caso, descomponiendo el gráfico anterior por tipo de crimen.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">HoustonMap +
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">x =</span> lon, <span class="dt">y =</span> lat), <span class="dt">data =</span> crimes.houston, <span class="dt">size =</span> <span class="dv">1</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">facet_wrap</span>(~<span class="st"> </span>offense)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-284-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-284-1.png" width="672" /></p>
 <p>O, alternativamente, por día de la semana.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">HoustonMap +
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">x =</span> lon, <span class="dt">y =</span> lat), <span class="dt">data =</span> crimes.houston, <span class="dt">size =</span> <span class="dv">1</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">facet_wrap</span>(~<span class="st"> </span>day)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-285-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-285-1.png" width="672" /></p>
 <div class="ej">
 <p>
 Prueba a pintar las gasolineras en el mapa de España (fichero <code>dat/carburantes_20050222.csv</code>).
@@ -331,7 +331,7 @@ mapa &lt;-<span class="st"> </span><span class="kw">get_map</span>(<span class="
 ## &#39;231fdeaa4211fa802000ac0b16439cba.rds&#39;, reason &#39;No such file or directory&#39;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggmap</span>(mapa) +<span class="st"> </span><span class="kw">geom_path</span>(<span class="kw">aes</span>(<span class="dt">x =</span> X1, <span class="dt">y =</span> X2, <span class="dt">group =</span> id), <span class="dt">data =</span> rutas, <span class="dt">colour =</span> <span class="st">&quot;red&quot;</span>)</code></pre></div>
 <pre><code>## Warning: Removed 814 rows containing missing values (geom_path).</code></pre>
-<p><img src="_main_files/figure-html/unnamed-chunk-289-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-289-1.png" width="672" /></p>
 </div>
 <div id="mas-alla-de-los-puntos-densidades-y-reticulas" class="section level3">
 <h3><span class="header-section-number">10.2.3</span> Más allá de los puntos: densidades y retículas</h3>
@@ -342,14 +342,14 @@ mapa &lt;-<span class="st"> </span><span class="kw">get_map</span>(<span class="
     <span class="dt">size =</span> .<span class="dv">5</span>, <span class="dt">bins =</span> <span class="dv">30</span>, <span class="dt">alpha =</span> <span class="dv">1</span>/<span class="dv">2</span>,
     <span class="dt">data =</span> crimes.houston
   )</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-290-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-290-1.png" width="672" /></p>
 <p>O se puede usar <code>stat_density2d</code>, que representa intensidades, para identificar las zonas de mayor criminalidad.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">HoustonMap +
 <span class="st">  </span><span class="kw">stat_density2d</span>(<span class="kw">aes</span>(<span class="dt">x =</span> lon, <span class="dt">y =</span> lat, <span class="dt">fill =</span> ..level.., <span class="dt">alpha =</span> ..level..),
                  <span class="dt">size =</span> <span class="dv">2</span>, <span class="dt">data =</span> crimes.houston,
                  <span class="dt">geom =</span> <span class="st">&quot;polygon&quot;</span>
 )</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-291-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-291-1.png" width="672" /></p>
 <div class="ej">
 <p>
 Lee <a href="https://journal.r-project.org/archive/2013-1/kahle-wickham.pdf">este artículo</a> y consulta qué otras cosas (además de puntos) pueden representarse sobre un mapa.
@@ -386,7 +386,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

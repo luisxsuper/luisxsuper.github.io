@@ -271,13 +271,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(reshape2)
 tmp &lt;-<span class="st"> </span><span class="kw">melt</span>(iris)
 <span class="kw">ggplot</span>(tmp, <span class="kw">aes</span>(<span class="dt">x =</span> Species, <span class="dt">y =</span> value)) +<span class="st"> </span><span class="kw">geom_boxplot</span>() +<span class="st"> </span><span class="kw">facet_wrap</span>(~<span class="st"> </span>variable)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-263-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-263-1.png" width="672" /></p>
 <p>El gráfico utiliza las facetas para crear cuatro paneles, uno por variable. Así resume rápidamente la información contenida en el conjunto de datos y revela eficazmente los patrones que encierra: por ejemplo, cómo la especie setosa tiene el pétalo sensiblemente más estrecho y corto que las otras dos. Este tipo de gráficos son fundamentales como herramienta exploratoria previa a la aplicación de técnicas de análisis estadístico (discriminante, en este caso).</p>
 <p>Los gráficos de cajas son muy básicos: apenas muestran cinco puntos característicos de una distribución: la mediana, los extremos y los cuartiles. Son herencia de una época en que apenas había recursos, principalmente informáticos, para realizar representaciones más sofisticadas. Una versión moderna de los gráficos de cajas es la de gráficos de violín. Como los de cajas, resumen la distribución de las variables. Pero en lugar de una representación sucinta, tratan de dibujar la distribución real de los datos: son verdaderos gráficos de densidad, solo que dispuestos de otra manera para facilitar la comparación.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(tmp, <span class="kw">aes</span>(<span class="dt">x =</span> Species, <span class="dt">y =</span> value)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_violin</span>(<span class="dt">fill =</span> <span class="st">&quot;lightblue&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">facet_wrap</span>(~<span class="st"> </span>variable)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-264-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-264-1.png" width="672" /></p>
 </div>
 <div id="comparacion-de-dos-densidades" class="section level3">
 <h3><span class="header-section-number">9.3.2</span> Comparación de dos densidades</h3>
@@ -291,10 +291,10 @@ tmp &lt;-<span class="st"> </span><span class="kw">rbind</span>(<span class="kw"
              <span class="kw">data.frame</span>(<span class="dt">origen =</span> <span class="st">&quot;b&quot;</span>, <span class="dt">dato =</span> b))
 
 <span class="kw">ggplot</span>(tmp, <span class="kw">aes</span>(<span class="dt">x =</span> dato)) +<span class="st"> </span><span class="kw">geom_density</span>() +<span class="st"> </span><span class="kw">facet_grid</span>(origen ~<span class="st"> </span>.)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-265-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-265-1.png" width="672" /></p>
 <p>Alternativamente, se pueden solapar ambas distribuciones. El uso del parámetro <code>alpha</code>, que controla la transparencia, es fundamental en este caso:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(tmp, <span class="kw">aes</span>(<span class="dt">x =</span> dato, <span class="dt">fill =</span> origen)) +<span class="st"> </span><span class="kw">geom_density</span>(<span class="dt">alpha =</span> <span class="fl">0.3</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-266-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-266-1.png" width="672" /></p>
 </div>
 <div id="series-temporales" class="section level3">
 <h3><span class="header-section-number">9.3.3</span> Series temporales</h3>
@@ -316,11 +316,11 @@ res &lt;-<span class="st"> </span><span class="kw">merge</span>(<span class="kw"
 res &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">fecha =</span> <span class="kw">index</span>(res), <span class="kw">as.data.frame</span>(res))
 res &lt;-<span class="st"> </span><span class="kw">melt</span>(res, <span class="dt">id.var =</span> <span class="st">&quot;fecha&quot;</span>)
 <span class="kw">ggplot</span>(res, <span class="kw">aes</span>(<span class="dt">x =</span> fecha, <span class="dt">y =</span> value)) +<span class="st"> </span><span class="kw">geom_line</span>() +<span class="st"> </span><span class="kw">facet_grid</span>(variable ~<span class="st"> </span>.)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-267-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-267-1.png" width="672" /></p>
 <p>Una versión alternativa del gráfico es la que superpone las series usando colores para distinguirlas:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(res, <span class="kw">aes</span>(<span class="dt">x =</span> fecha, <span class="dt">y =</span> value, <span class="dt">colour =</span> variable)) +<span class="st"> </span><span class="kw">geom_line</span>() +
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">colour =</span> <span class="st">&quot;valor&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;cotización&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-268-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-268-1.png" width="672" /></p>
 </div>
 </div>
             </section>
@@ -352,7 +352,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

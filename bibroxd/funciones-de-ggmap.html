@@ -276,7 +276,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p><code>ggmap</code> obtiene sus mapas, por defecto, de GoogleMaps. Sin embargo hay otros proveedores de mapas libres, como OpenStreetMap (OSM) o Stamen. Cada proveedor exige una serie de parámetros distintos y, por ejemplo, un <em>zoom</em> de 8 puede significar una escala distinta en GoogleMaps que en OSM. Sin embargo, los autores de <code>ggmap</code> se han tomado la molestia de homogeneizar los argumentos de llamada para que sean aproximadamente equivalentes en todos los proveedores.</p>
 <p><code>ggmap</code> incluye funciones específicas para cada proveedor, como <code>get_googlemap</code> o <code>get_stamenmap</code>, pero salvo para usos avanzados, es recomendable usar la función <code>get_map</code>, que ofrece un punto de entrada único y homogéneo para el resto.</p>
 <p>El gráfico siguiente muestra cuatro mapas obtenidos de diversos proveedores y con diversas opciones. En la fila superior, una capa de Google en modo imagen de satélite y otra estándar. En la inferior, dos mapas de Stamen, uno en modo <em>toner</em> y otro en modo <em>watercolor</em> o acuarela. Son solo cuatro de los muchos a los que la función <code>get_map</code> puede acceder.</p>
-<p><img src="_main_files/figure-html/unnamed-chunk-278-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-278-1.png" width="672" /></p>
 <div class="ej">
 <p>
 Representa la ubicación de la universidad de Zaragoza (u otra que prefieras) con otros tipos de mapas, otros zums, etc.
@@ -297,7 +297,7 @@ ruta &lt;-<span class="st"> </span><span class="kw">route</span>(<span class="dt
 <span class="kw">ggmap</span>(mapa) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_path</span>(<span class="kw">aes</span>(<span class="dt">x =</span> startLon, <span class="dt">y =</span> startLat, <span class="dt">xend =</span> endLon, <span class="dt">yend =</span> endLat),
             <span class="dt">colour =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">size =</span> <span class="dv">2</span>, <span class="dt">data =</span> ruta)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-281-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-281-1.png" width="672" /></p>
 <p>En el mapa anterior la ruta elegida por GoogleMaps para ir de la Puerta del Sol hasta la plaza de Castilla (dos plazas de Madrid) está marcado en rojo sobre un mapa de Stamen de tipo <em>toner</em>.</p>
 </div>
 <div id="funciones-para-representar-elementos-sobre-mapas" class="section level3">
@@ -335,7 +335,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

@@ -278,7 +278,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p><code>sleep</code> contiene información sobre el número adicional de horas que durmieron una serie de sujetos después de recibir un determinado tratamiento médico. Solo que algunos de los sujetos, los integrados en el grupo de control, recibieron un placebo. El siguiente diagrama de cajas muestra la distribución del número de horas de sueño con y sin tratamiento.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(sleep$extra ~<span class="st"> </span>sleep$group, <span class="dt">col =</span> <span class="st">&quot;gray&quot;</span>, 
         <span class="dt">main =</span> <span class="st">&quot;Diferencias por grupo&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-130-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-130-1.png" width="672" /></p>
 <p>Este gráfico muestra cómo el grupo tratado, el de la derecha, tiende a dormir más horas. Pero no responde fehacientemente a la pregunta de si el tratamiento funciona o no. El llamado test de Student ayuda a determinar si la diferencia observada es o no <em>estadísticamente significativa</em>. Nótese cómo su sintaxis es esencialmente la misma que la de <code>boxplot</code>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">t.test</span>(sleep$extra ~<span class="st"> </span>sleep$group)</code></pre></div>
 <pre><code>## 
@@ -334,7 +334,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

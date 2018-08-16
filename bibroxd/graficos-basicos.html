@@ -270,7 +270,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h3><span class="header-section-number">2.6.1</span> Gráficos de dispersión</h3>
 <p>Los gráficos de dispersión muestran la relación entre dos variables numéricas. En el ejemplo siguiente serán la velocidad y la distancia de frenado de un conjunto de coches recogidas en el conjunto de datos <code>cars</code>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cars$speed, cars$dist)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
 <p>El gráfico muestra cómo aumenta <code>dist</code> en función de <code>speed</code>.</p>
 <div class="ej">
 <p>
@@ -282,7 +282,7 @@ Representa gráficamente la anchura del sépalo contra su longitud (en <code>iri
      <span class="dt">ylab =</span> <span class="st">&quot;distancia en pies&quot;</span>)
 <span class="kw">lines</span>(cars$dist)
 <span class="kw">grid</span>()</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
 <div class="ej">
 <p>
 Consulta la ayuda de la función <code>abline</code> y úsala para añadir líneas a alguno de los gráficos anteriores.
@@ -299,7 +299,7 @@ Consulta <code>?par</code>, una página de ayuda en R que muestra gran cantidad 
 <p>Los gráficos de barras muestran los valores de un vector, típicamente construido como el promedio de una serie de variables numéricas o el conteo de unas categóricas.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">barplot</span>(VADeaths[, <span class="dv">2</span>], <span class="dt">xlab =</span> <span class="st">&quot;tramos de edad&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;tasa de mortalidad&quot;</span>, 
         <span class="dt">main =</span> <span class="st">&quot;Tasa de mortalidad en Virginia</span><span class="ch">\n</span><span class="st">mujer/rural&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-46-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-46-1.png" width="672" /></p>
 <div class="ej">
 <p>
 Mejora el gráfico anterior con el parámetro <code>col</code> (de color).
@@ -307,7 +307,7 @@ Mejora el gráfico anterior con el parámetro <code>col</code> (de color).
 </div>
 <p>Los gráficos de puntos son alternativas recomendadas a las tradicionales barras:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dotchart</span>(<span class="kw">t</span>(VADeaths),  <span class="dt">main =</span> <span class="st">&quot;Death Rates in Virginia - 1940&quot;</span>, <span class="dt">cex =</span> <span class="fl">0.8</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
 <div class="nota">
 <p>
 Los gráficos de barras exigen como parámetros o bien un vector o bien una matriz. En el primer ejemplo hemos usado como vector una columna de una matriz; en el segundo, una matriz completa (y la función de trasposición <code>t</code>).
@@ -321,7 +321,7 @@ La diferencia más importante entre las tablas y las matrices es que las última
 <h3><span class="header-section-number">2.6.3</span> Histogramas</h3>
 <p>Los histrogramas representan la distribución de un vector numérico. Un histograma es la manera más rápida de entender <em>la forma</em> de los datos (p.e., las edades de un conjunto de personas).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(iris$Sepal.Width)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
 <div class="ej">
 <p>
 Estudia la distribución de las temperaturas en Nueva York (usa <code>airquality</code>).
@@ -343,7 +343,7 @@ Usa <code>abline</code> para dibujar una línea vertical roja en la media de la 
 <p>Los diagramas de caja son parecidos a los histogramas porque resumen la distribución de una variable continua (mediante una caja y unos segmentos que acotan las regiones donde la variable tiene el grueso de las observaciones). La representación es menos fina que la del histograma pero tiene una ventaja: permite comparar la distribución de una variable numérica en función de otra variable categórica.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(iris$Sepal.Width ~<span class="st"> </span>iris$Species, <span class="dt">col =</span> <span class="st">&quot;gray&quot;</span>,
         <span class="dt">main =</span> <span class="st">&quot;Especies de iris</span><span class="ch">\n</span><span class="st">según la anchura del sépalo&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-54-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-54-1.png" width="672" /></p>
 <p>La notación <code>y ~ x</code> es muy común en R y significa que vas a hacer <em>algo</em> con <code>y</code> en función de <code>x</code>; en este caso, <em>algo</em> es un diagrama de cajas. Cuando construyamos modelos, también querremos entender la variable objetivo <code>y</code> en función de una o más variables predictoras y volveremos a hacer uso de esa notación<a href="#fn13" class="footnoteRef" id="fnref13"><sup>13</sup></a>.</p>
 <div class="ej">
 <p>
@@ -387,7 +387,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },
