@@ -289,7 +289,7 @@ Consulta la ayuda de <code>rnorm</code>, <code>runif</code> y <code>rpois</code>
 <p>El ejercicio anterior debería poner de manifiesto cómo en R, asociada a cada distribución de probabilidad hay cuatro funciones cuyos nombres comienzan por las letras <code>r</code>, <code>p</code>, <code>d</code> y <code>q</code>. La función que comienza por <code>r</code> sirve para muestrear la distribución, como en los ejemplos anteriores.</p>
 <p>La función que comienza por <code>d</code> es la densidad<a href="#fn15" class="footnoteRef" id="fnref15"><sup>15</sup></a> de la distribución. Por ejemplo, la función <code>dnorm</code> es la famosa campana de Gauss. Se puede representar con la función <code>curve</code>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">curve</span>(<span class="kw">dnorm</span>(x, <span class="dv">0</span>, <span class="dv">2</span>), -<span class="dv">8</span>, <span class="dv">8</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-93-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-93-1.png" width="672" /></p>
 <div class="ej">
 <p>
 Usa <code>curve</code> para representar la densidad de la distribución beta para diversos valores de sus parámetros. Lee <code>?curve</code> para averiguar cómo sobreimpresionar curvas y representa la densidad para diversas combinaciones de los parámetros con colores distintos. Puedes comparar el resultado con los gráficos que aparecen en la página de la distribución beta en la Wikipedia.
@@ -299,11 +299,11 @@ Usa <code>curve</code> para representar la densidad de la distribución beta par
 <p><span class="math display">\[ F(x) = \int_{-\infty}^x f(x) dx. \]</span></p>
 <p>Como consecuencia, es una función que crece más o menos suavemente de 0 a 1.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">curve</span>(<span class="kw">pnorm</span>(x, <span class="dv">0</span>, <span class="dv">2</span>), -<span class="dv">8</span>, <span class="dv">8</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-95-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-95-1.png" width="672" /></p>
 <p>Finalmente, la función cuyo nombre comienza por <code>q</code> es la que calcula los cuantiles. Es decir, es la inversa de la función de probabilidad. Por ejemplo, en el gráfico</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">curve</span>(<span class="kw">dnorm</span>(x, <span class="dv">0</span>, <span class="dv">2</span>), -<span class="dv">8</span>, <span class="dv">8</span>)
 <span class="kw">abline</span>(<span class="dt">v =</span> <span class="kw">qnorm</span>(<span class="fl">0.1</span>, <span class="dv">0</span>, <span class="dv">2</span>), <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-96-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-96-1.png" width="672" /></p>
 <p>la probabilidad que asigna la normal a la zona que queda a la izquierda de la recta vertical roja es del 10%, valor indicado por el primer argumento de <code>qnorm</code>, <code>0.1</code>.</p>
 </div>
 <div class="footnotes">
@@ -341,7 +341,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },

@@ -277,7 +277,7 @@ olive<span class="fl">.00</span>$Area &lt;-<span class="st"> </span>olive<span c
 <p>La fórmula <code>Region ~ .</code> indica que queremos modelar <code>Region</code> en función de <code>.</code>, es decir, el resto de las variables disponibles en nuestros datos. Alternativamente, se pueden indicar las variables predictoras a la derecha de <code>~</code> separadas por el signo <code>+</code>: <code>y ~ x1 + x2 + x3</code>. También es posible seleccionar todas menos algunas de ellas con el signo <code>-</code>, p.e., <code>y ~ . - x1</code>. Desafortunadamente, la función <code>ctree</code> no interpreta correctamente expresiones que usan el signo <code>-</code>. Ese es el motivo por el que hemos creado un conjunto de datos auxiliar <code>olive.00</code>; lo natural hubiese sido especificar <code>Region ~ . - Area - Test.Training</code>.</p>
 <p>El objeto <code>modelo</code> construido con <code>ctree</code> contiene toda la información relativa al árbol que hemos construido. La mejor manera de inspeccionar el modelo obtenido es representándolo gráficamente haciendo:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(modelo)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-390-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-390-1.png" width="672" /></p>
 <p>Como puede apreciarse, la predicción es <em>perfecta</em>: en los nodos finales no hay confusión de regiones. Por ejemplo, el nodo terminal de la derecha, el que se construye con la regla <code>eicosenoic &gt; 3</code>, contiene únicamente aceites procedentes de la zona sur de Italia. Por lo tanto, siempre que un aceite cumpla dicha regla, se categorizará como procedente de esa región.</p>
 <div class="nota">
 <p>
@@ -302,7 +302,7 @@ Inspecciona el objeto <code>olive.01</code>.
 <p>Ahora usaremos la parte <code>Training</code> para ajustar el modelo:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">modelo &lt;-<span class="st"> </span><span class="kw">ctree</span>(Region ~<span class="st"> </span>., <span class="dt">data =</span> olive<span class="fl">.01</span>$Training)
 <span class="kw">plot</span>(modelo)</code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-395-1.png" width="672" /></p>
+<p><img src="main_files/figure-html/unnamed-chunk-395-1.png" width="672" /></p>
 <p>El modelo resultante es muy similar construido con todos los datos. Pero ahora podemos hacer predicciones usando la parte <code>Test</code><a href="#fn34" class="footnoteRef" id="fnref34"><sup>34</sup></a> con la función <code>predict</code>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">predicciones &lt;-<span class="st"> </span><span class="kw">predict</span>(modelo, olive<span class="fl">.01</span>$Test)</code></pre></div>
 <p>La práctica totalidad de los modelos estadíticos en R implementan una versión de <code>predict</code> que siempre admite dos argumentos<a href="#fn35" class="footnoteRef" id="fnref35"><sup>35</sup></a>: el modelo ajustado previamente y un nuevo conjunto de datos (obviamente, con la misma estructura que el usado para crearlo).</p>
@@ -376,7 +376,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["_main.pdf"],
+"download": ["main.pdf"],
 "toc": {
 "collapse": "subsection"
 },
