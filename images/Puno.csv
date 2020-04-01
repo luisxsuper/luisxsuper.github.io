@@ -1,0 +1,241 @@
+id;date;ciudad;provincia;atencion;edad;sexo;tipo;pais_procedencia
+1;6/03/2020;PHARA;SANDIA;recuperado;10 a 19;F;Importado;Italia
+2;9/03/2020;ILAVE;EL COLLAO;recuperado;30 a 39;M;Importado;España
+3;14/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Relacionado;Colombia
+4;14/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Relacionado;Colombia
+5;14/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;Estados Unidos
+6;15/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;España
+7;15/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;España
+8;15/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;España
+9;15/03/2020;ILAVE;EL COLLAO;casa;70 a 79;M;Importado;Estados Unidos
+10;15/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+11;15/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;España
+12;15/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;España
+13;15/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;España
+14;15/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;España
+15;15/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Relacionado;Colombia
+16;15/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Relacionado;Colombia
+17;15/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Importado;España
+18;15/03/2020;SAN MIGUEL;SAN ROMAN;casa;20 a 29;M;Importado;Estados Unidos
+19;15/03/2020;SAN MIGUEL;SAN ROMAN;recuperado;60 a 69;M;Importado;Estados Unidos
+20;15/03/2020;SAN MIGUEL;SAN ROMAN;casa;50 a 59;M;Importado;España - Croacia - Bosnia
+21;15/03/2020;SAN MIGUEL;SAN ROMAN;casa;50 a 59;F;Relacionado;Colombia
+22;15/03/2020;JULIACA;SAN ROMAN;casa;70 a 79;M;Relacionado;Colombia
+23;15/03/2020;JULIACA;SAN ROMAN;casa;50 a 59;F;Relacionado;Colombia
+24;15/03/2020;JULIACA;SAN ROMAN;casa;70 a 79;M;Relacionado;Colombia
+25;15/03/2020;JULIACA;SAN ROMAN;casa;20 a 29;F;Relacionado;Colombia
+26;15/03/2020;JULIACA;SAN ROMAN;casa;20 a 29;M;Importado;España
+27;16/03/2020;JULIACA;SAN ROMAN;casa;40 a 49;F;Relacionado;Colombia
+28;16/03/2020;JULIACA;SAN ROMAN;casa;30 a 39;M;Relacionado;Colombia
+29;16/03/2020;JULIACA;SAN ROMAN;casa;30 a 39;M;Relacionado;Colombia
+30;16/03/2020;JULIACA;SAN ROMAN;casa;40 a 49;F;Importado;España
+31;16/03/2020;JULIACA;SAN ROMAN;casa;60 a 69;F;Importado;España
+32;16/03/2020;JULIACA;SAN ROMAN;casa;20 a 29;M;Importado;España
+33;16/03/2020;JULIACA;SAN ROMAN;casa;60 a 69;M;Importado;España
+34;16/03/2020;JULIACA;SAN ROMAN;casa;40 a 49;F;Importado;España
+35;16/03/2020;JULIACA;SAN ROMAN;casa;50 a 59;F;Relacionado;Colombia
+36;16/03/2020;JULIACA;SAN ROMAN;casa;30 a 39;M;Importado;España
+37;16/03/2020;JULIACA;SAN ROMAN;hospital;30 a 39;M;Relacionado;Colombia
+38;16/03/2020;JULIACA;SAN ROMAN;casa;20 a 29;M;Importado;Ecuador
+39;17/03/2020;JULI;CHUCUITO;casa;20 a 29;M;Importado;España
+40;17/03/2020;JULI;CHUCUITO;casa;20 a 29;M;Importado;España
+41;17/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;España
+42;17/03/2020;ILAVE;EL COLLAO;casa;60 a 69;M;Relacionado;Colombia
+43;17/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Importado;España
+44;17/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;España
+45;17/03/2020;ILAVE;EL COLLAO;hospital;70 a 79;M;Importado;España
+46;17/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;Estados Unidos
+47;17/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Importado;Turquía - Grecia
+48;17/03/2020;ILAVE;EL COLLAO;casa;10 a 19;M;Relacionado;Colombia
+49;17/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+50;17/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;España
+51;17/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;Italia
+52;17/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;Francia
+53;17/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Relacionado;Colombia
+54;17/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Relacionado;Colombia
+55;17/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Relacionado;Colombia
+56;17/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Relacionado;Colombia
+57;18/03/2020;PUNO;PUNO;casa;40 a 49;F;Importado;Italia
+58;18/03/2020;PUNO;PUNO;casa;10 a 19;M;Importado;España
+59;18/03/2020;PUNO;PUNO;casa;50 a 59;M;Relacionado;Colombia
+60;18/03/2020;PUNO;PUNO;casa;20 a 29;F;Importado;España
+61;18/03/2020;PUNO;PUNO;casa;50 a 59;M;Importado;Estados Unidos
+62;18/03/2020;PUNO;PUNO;hospital;60 a 69;M;Importado;Turquía
+63;18/03/2020;ACORA;PUNO;casa;30 a 39;F;Importado;Estados Unidos
+64;18/03/2020;ACORA;PUNO;Casa;30 a 39;F;Importado;España
+65;18/03/2020;ACORA;PUNO;casa;40 a 49;M;Importado;España
+66;18/03/2020;ACORA;PUNO;casa;30 a 39;M;Importado;España - Italia
+67;18/03/2020;ACORA;PUNO;casa;40 a 49;F;Importado;Estados Unidos
+68;18/03/2020;ACORA;PUNO;casa;50 a 59;M;Importado;España
+69;18/03/2020;ACORA;PUNO;casa;50 a 59;M;Importado;Estados Unidos
+70;18/03/2020;ACORA;PUNO;casa;50 a 59;M;Importado;Ecuador
+71;18/03/2020;ACORA;PUNO;casa;40 a 49;F;Relacionado;Colombia
+72;18/03/2020;ACORA;PUNO;casa;20 a 29;M;Importado;Estados Unidos
+73;18/03/2020;ACORA;PUNO;casa;20 a 29;M;Importado;España
+74;18/03/2020;ACORA;PUNO;casa;10 a 19;M;Importado;España
+75;18/03/2020;ACORA;PUNO;casa;10 a 19;M;Relacionado;Colombia
+76;18/03/2020;ACORA;PUNO;casa;50 a 59;F;Relacionado;Colombia
+77;18/03/2020;ACORA;PUNO;casa;30 a 39;F;Relacionado;Colombia
+78;18/03/2020;ACORA;PUNO;casa;0 a 9;M;Relacionado;Colombia
+79;18/03/2020;ACORA;PUNO;casa;50 a 59;F;Relacionado;Colombia
+80;18/03/2020;PLATERIA;PUNO;hospital;20 a 29;M;Importado;Francia
+81;18/03/2020;PLATERIA;PUNO;casa;20 a 29;M;Importado;España
+82;18/03/2020;PLATERIA;PUNO;casa;70 a 79;M;Importado;España
+83;18/03/2020;PLATERIA;PUNO;casa;30 a 39;M;Relacionado;Colombia
+84;19/03/2020;PLATERIA;PUNO;casa;20 a 29;F;Relacionado;Colombia
+85;19/03/2020;JULI;CHUCUITO;casa;40 a 49;F;Importado;España
+86;19/03/2020;JULI;CHUCUITO;casa;50 a 59;F;Importado;Estados Unidos
+87;19/03/2020;JULI;CHUCUITO;casa;30 a 39;F;Relacionado;Colombia
+88;19/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;España
+89;19/03/2020;ILAVE;EL COLLAO;casa;60 a 69;F;Importado;Estados Unidos
+90;19/03/2020;ILAVE;EL COLLAO;casa;60 a 69;M;Relacionado;Colombia
+91;19/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;España
+92;19/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;Italia - España - Turquía
+93;19/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;Estados Unidos
+94;19/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;Ecuador
+95;19/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+96;19/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;España
+97;19/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;España
+98;19/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;España
+99;19/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Relacionado;Colombia
+100;19/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Relacionado;Colombia
+101;19/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;España
+102;19/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;España
+103;19/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Importado;España
+104;19/03/2020;ILAVE;EL COLLAO;casa;70 a 79;F;Relacionado;Colombia
+105;19/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;España
+106;19/03/2020;ILAVE;EL COLLAO;casa;60 a 69;M;Importado;España
+107;19/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Importado;España
+108;19/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Relacionado;Colombia
+109;19/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Importado;España
+110;20/03/2020;PUNO;PUNO;casa;50 a 59;M;Importado;Estados Unidos
+111;20/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;Ecuador
+112;20/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;España - India
+113;20/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;Brasil
+114;20/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Relacionado;Colombia
+115;20/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Relacionado;Colombia
+116;20/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Relacionado;Colombia
+117;20/03/2020;CHUPA;AZANGARO;casa;30 a 39;M;Importado;Alemania - Estambul
+118;20/03/2020;CHUPA;AZANGARO;casa;20 a 29;F;Importado;Italia - España - Turquía
+119;20/03/2020;CHUPA;AZANGARO;casa;40 a 49;M;Importado;Ecuador
+120;20/03/2020;CHUPA;AZANGARO;casa;60 a 69;M;Importado;Estados Unidos
+121;20/03/2020;CHUPA;AZANGARO;casa;50 a 59;F;Relacionado;Colombia
+122;20/03/2020;CHUPA;AZANGARO;casa;40 a 49;M;Importado;Jamaica - Panamá - Islas Caimán
+123;20/03/2020;CHUPA;AZANGARO;casa;30 a 39;M;Importado;Estados Unidos
+124;20/03/2020;CHUPA;AZANGARO;casa;40 a 49;F;Importado;Estados Unidos
+125;20/03/2020;CHUPA;AZANGARO;casa;20 a 29;F;Importado;Estados Unidos
+126;20/03/2020;CHUPA;AZANGARO;casa;20 a 29;M;Importado;Estados Unidos - México
+127;20/03/2020;CHUPA;AZANGARO;casa;20 a 29;M;Relacionado;Colombia
+128;20/03/2020;CHUPA;AZANGARO;casa;60 a 69;F;Importado;España
+129;20/03/2020;CHUPA;AZANGARO;casa;30 a 39;F;Relacionado;Colombia
+130;20/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+131;20/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+132;20/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;España
+133;20/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+134;20/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Importado;Grecia
+135;20/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Relacionado;Colombia
+136;20/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Relacionado;Colombia
+137;20/03/2020;ILAVE;EL COLLAO;casa;60 a 69;F;Importado;Croacia
+138;20/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Importado;Italia - Jamaica- Panamá
+139;20/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;Panama
+140;20/03/2020;ILAVE;EL COLLAO;casa;10 a 19;F;Relacionado;Colombia
+141;20/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;España
+142;20/03/2020;ILAVE;EL COLLAO;hospital;50 a 59;M;Relacionado;Colombia
+143;20/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;España
+144;20/03/2020;ILAVE;EL COLLAO;fallecido;80 a 89;M;En estudio;Colombia
+145;21/03/2020;JULI;CHUCUITO;casa;20 a 29;F;Importado;Estados Unidos
+146;21/03/2020;JULI;CHUCUITO;casa;30 a 39;M;Importado;Estados Unidos
+147;21/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Relacionado;Colombia
+148;21/03/2020;ILAVE;EL COLLAO;casa;60 a 69;F;Importado;España
+149;21/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;Guatemala
+150;21/03/2020;ILAVE;EL COLLAO;casa;60 a 69;M;Importado;España
+151;21/03/2020;ILAVE;EL COLLAO;casa;60 a 69;F;Importado;Reino Unido
+152;21/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;Turquía
+153;21/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Importado;Ecuador
+154;21/03/2020;ILAVE;EL COLLAO;casa;70 a 79;M;Relacionado;Colombia
+155;21/03/2020;ILAVE;EL COLLAO;fallecido;70 a 79;F;Relacionado;Colombia
+156;21/03/2020;ILAVE;EL COLLAO;casa;80 a 89;F;Importado;Estados Unidos
+157;21/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;España
+158;21/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Relacionado;Colombia
+159;21/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Importado;Italia
+160;21/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Relacionado;Colombia
+161;21/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;Estados Unidos
+162;21/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+163;21/03/2020;ILAVE;EL COLLAO;fallecido;50 a 59;M;Relacionado;Colombia
+164;21/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Relacionado;Colombia
+165;21/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Importado;España
+166;21/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+167;21/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;Estados Unidos
+168;21/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;Estados Unidos
+169;21/03/2020;ILAVE;EL COLLAO;hospital;50 a 59;M;En estudio;Colombia
+170;21/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;Estados Unidos
+171;21/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;España
+172;21/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Importado;España
+173;21/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Relacionado;Colombia
+174;21/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Importado;España
+175;21/03/2020;ILAVE;EL COLLAO;casa;10 a 19;M;Importado;Esatdos Unidos
+176;21/03/2020;ILAVE;EL COLLAO;casa;60 a 69;F;Importado;España
+177;21/03/2020;ILAVE;EL COLLAO;hospital;40 a 49;F;Importado;Estados Unidos
+178;21/03/2020;ILAVE;EL COLLAO;casa;60 a 69;F;Importado;Estados Unidos
+179;21/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;España
+180;22/03/2020;PUNO;PUNO;casa;50 a 59;F;Relacionado;Colombia
+181;22/03/2020;PUNO;PUNO;casa;30 a 39;F;Relacionado;Colombia
+182;22/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;España
+183;22/03/2020;ILAVE;EL COLLAO;hospital;50 a 59;F;Relacionado;Colombia
+184;22/03/2020;ILAVE;EL COLLAO;casa;60 a 69;M;Relacionado;Colombia
+185;22/03/2020;ILAVE;EL COLLAO;hospital;40 a 49;M;Relacionado;Colombia
+186;22/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;España
+187;22/03/2020;SANTA ROSA;EL COLLAO;casa;50 a 59;F;Importado;República Dominicana
+188;22/03/2020;SANTA ROSA;EL COLLAO;casa;20 a 29;M;Importado;España
+189;22/03/2020;SANTA ROSA;EL COLLAO;casa;20 a 29;M;Relacionado;Colombia
+190;22/03/2020;SANTA ROSA;EL COLLAO;casa;20 a 29;M;Importado;Estados Unidos
+191;22/03/2020;SANTA ROSA;EL COLLAO;casa;20 a 29;M;Importado;España
+192;22/03/2020;SANTA ROSA;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+193;22/03/2020;SANTA ROSA;EL COLLAO;casa;50 a 59;M;Importado;España
+194;22/03/2020;SANTA ROSA;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+195;22/03/2020;SANTA ROSA;EL COLLAO;casa;40 a 49;M;Importado;España
+196;22/03/2020;SANTA ROSA;EL COLLAO;hospital;50 a 59;M;En estudio;Colombia
+197;22/03/2020;SANTA ROSA;EL COLLAO;casa;10 a 19;M;Relacionado;Colombia
+198;22/03/2020;SANTA ROSA;EL COLLAO;casa;20 a 29;F;Relacionado;Colombia
+199;22/03/2020;SANTA ROSA;EL COLLAO;casa;30 a 39;M;Importado;España
+200;22/03/2020;SANTA ROSA;EL COLLAO;casa;60 a 69;F;Importado;España
+201;22/03/2020;SANTA ROSA;EL COLLAO;casa;30 a 39;M;En estudio;Colombia
+202;22/03/2020;SANTA ROSA;EL COLLAO;casa;50 a 59;F;Relacionado;Colombia
+203;22/03/2020;SANTA ROSA;EL COLLAO;casa;50 a 59;F;Importado;Grecia
+204;22/03/2020;SANTA ROSA;EL COLLAO;casa;30 a 39;M;Importado;España
+205;22/03/2020;SANTA ROSA;EL COLLAO;casa;70 a 79;F;Importado;Estados Unidos
+206;22/03/2020;SANTA ROSA;EL COLLAO;casa;30 a 39;M;Relacionado;Colombia
+207;22/03/2020;SANTA ROSA;EL COLLAO;casa;30 a 39;M;Importado;España
+208;22/03/2020;SANTA ROSA;EL COLLAO;casa;30 a 39;F;Relacionado;Colombia
+209;22/03/2020;SANTA ROSA;EL COLLAO;casa;40 a 49;F;Relacionado;Colombia
+210;23/03/2020;SANTA ROSA;EL COLLAO;casa;20 a 29;F;Importado;Turquía
+211;23/03/2020;SANTA ROSA;EL COLLAO;casa;60 a 69;M;Importado;España
+212;23/03/2020;SANTA ROSA;EL COLLAO;casa;20 a 29;F;Importado;España
+213;23/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;Estados Unidos
+214;23/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;En estudio;Colombia
+215;23/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;Estados Unidos
+216;23/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;España
+217;23/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Relacionado;Colombia
+218;23/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;Importado;España
+219;23/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;España
+220;23/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;Colombia
+221;23/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;Ecuador
+222;23/03/2020;ILAVE;EL COLLAO;casa;60 a 69;F;Importado;Ecuador
+223;23/03/2020;ILAVE;EL COLLAO;casa;30 a 39;F;Importado;Estados Unidos
+224;23/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;Ecuador
+225;24/03/2020;PUNO;PUNO;casa;30 a 39;M;Importado;España
+226;24/03/2020;PUNO;PUNO;casa;30 a 39;F;Relacionado;Colombia
+227;24/03/2020;JULI;CHUCUITO;casa;50 a 59;M;Importado;Panamá
+228;24/03/2020;JULI;CHUCUITO;casa;10 a 19;F;Importado;España
+229;24/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Importado;Chile
+230;24/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;En estudio;Colombia
+231;24/03/2020;ILAVE;EL COLLAO;casa;50 a 59;M;Importado;Estados Unidos
+232;24/03/2020;ILAVE;EL COLLAO;casa;20 a 29;F;Importado;Estados Unidos
+233;24/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;En estudio;Colombia
+234;24/03/2020;ILAVE;EL COLLAO;casa;10 a 19;F;En estudio;Colombia
+235;24/03/2020;ILAVE;EL COLLAO;casa;40 a 49;F;En estudio;NA
+236;24/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Relacionado;Colombia
+237;24/03/2020;ILAVE;EL COLLAO;casa;50 a 59;F;Importado;España
+238;24/03/2020;ILAVE;EL COLLAO;casa;30 a 39;M;Relacionado;Colombia
+239;24/03/2020;ILAVE;EL COLLAO;casa;40 a 49;M;Importado;Ecuador
+240;24/03/2020;ILAVE;EL COLLAO;casa;20 a 29;M;Importado;España
